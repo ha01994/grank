@@ -11,11 +11,10 @@ torch.manual_seed(0)
 
 nw = 8
 bsz = 16
-########## CHOOSE DEVICE #########
 device = 'cuda:2' 
 
 
-for foldnum in [3]:
+for foldnum in range(1,11):
     
     if os.path.exists('test_predictions_bm5/fold%d.csv'%foldnum):
 
