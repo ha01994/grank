@@ -85,16 +85,9 @@ for foldnum in foldnums:
             loss = loss_fn(pred, label)
             total_loss += float(loss)
             total_count += 1
-            
-            try:
-                loss.backward()
-                optimizer.step()
-            except RuntimeError as e:
-                if "CUDA out of memory" not in str(e): raise(e)
-                torch.cuda.empty_cache()
-                print('Skipped batch due to OOM', flush=True)
-                continue            
-
+            loss.backward()
+            optimizer.step()
+    
         print('train_loss: %.5f'%(total_loss / total_count))    
         torch.save(model.state_dict(), "model_dir/f%d_%d.pt"%(foldnum, epoch))
         
