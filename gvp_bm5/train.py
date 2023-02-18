@@ -27,9 +27,9 @@ for pdb in pdbs:
 
 
 nw = 8
-bsz = 32
+bsz = 64
 lr = 1e-4
-epochs = 20
+epochs = 50
 
 
 k = int(sys.argv[1])
