@@ -1,5 +1,7 @@
 # G-RANK
-Source code for the paper: An Equivariant Graph Neural Network for assessing the quality of structural models of protein complexes (publication under review)
+Source code for the paper
+G-RANK: an equivariant graph neural network for the scoring of protein–protein docking models
+https://doi.org/10.1093/bioadv/vbad011
 
 ### Verified dependencies
 * python: 3.7.13
