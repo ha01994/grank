@@ -1,6 +1,6 @@
 # G-RANK
-Source code for the paper
-G-RANK: an equivariant graph neural network for the scoring of protein–protein docking models
+Source code for the paper\
+G-RANK: an equivariant graph neural network for the scoring of protein–protein docking models\
 https://doi.org/10.1093/bioadv/vbad011
 
 ### Verified dependencies
